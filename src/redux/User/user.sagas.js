@@ -29,7 +29,7 @@ export function* getSnapshotFromUserAuth(user, additionalData = {}) {
     );
   } catch (err) {
     // console.log(err);
-  }
+  } 
 }
 
 export function* emailSignIn({ payload: { email, password } }) {

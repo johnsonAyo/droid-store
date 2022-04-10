@@ -14,6 +14,7 @@
     "@types/axios": "^0.14.0",
     "autoprefixer": "^10.4.2",
     "axios": "^0.26.1",
+    "ckeditor4-react": "^3.0.0",
     "concat": "^1.0.3",
     "dotenv": "^11.0.0",
     "firebase": "^9.6.10",

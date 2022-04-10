@@ -10,16 +10,20 @@ import HomepageLayout from "./layouts/HomepageLayout";
 import AdminLayout from "./layouts/AdminLayout";
 import DashboardLayout from "./layouts/DashboardLayout";
 
+// components
+import AdminToolbar from "./components/AdminToolbar";
+
 // hoc
 import WithAuth from "./hoc/withAuth";
 import WithAdminAuth from "./hoc/withAdminAuth";
 
 // pages
-import Homepage from "./page/Homepage";
-import Registration from "./page/Registration";
-import Login from "./page/Login";
-import Recovery from "./page/Recovery";
-import Dashboard from "./page/Dashboard";
+import Homepage from "./pages/Homepage";
+import Registration from "./pages/Registration";
+import Login from "./pages/Login";
+import Recovery from "./pages/Recovery";
+import Dashboard from "./pages/Dashboard";
+import Admin from "./pages/Admin";
 import "./default.scss";
 
 const MainLayouts = () => (
@@ -59,6 +63,7 @@ function App(props) {
 
   return (
     <div className="App">
+      <AdminToolbar />
       <div className="main">
         <Routes>
           <Route path="/" element={<HomepageLayouts />}>
@@ -77,7 +82,7 @@ function App(props) {
             <Route path="/dashboard" element={<Dashboard />} />
           </Route>
           <Route path="/admin" element={<AdminLayouts />}>
-            <Route path="/admin" element={<Dashboard />} />
+            <Route path="/admin" element={<Admin />} />
           </Route>
         </Routes>
       </div>
