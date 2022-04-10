@@ -11,7 +11,7 @@ export const handleAddProduct = product => {
       })
       .catch(err => {
         reject(err);
-      })
+      })  
   });
 }
 
