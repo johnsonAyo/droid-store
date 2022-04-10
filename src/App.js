@@ -24,6 +24,7 @@ import Login from "./pages/Login";
 import Recovery from "./pages/Recovery";
 import Dashboard from "./pages/Dashboard";
 import Admin from "./pages/Admin";
+import Search from "./pages/Search";
 import "./default.scss";
 
 const MainLayouts = () => (
@@ -83,6 +84,9 @@ function App(props) {
           </Route>
           <Route path="/admin" element={<AdminLayouts />}>
             <Route path="/admin" element={<Admin />} />
+          </Route>
+          <Route path="/search" element={<MainLayouts />}>
+            <Route path="/search" element={<Search />} />
           </Route>
         </Routes>
       </div>
