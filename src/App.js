@@ -85,8 +85,11 @@ function App(props) {
           <Route path="/admin" element={<AdminLayouts />}>
             <Route path="/admin" element={<Admin />} />
           </Route>
-          <Route path="/search" element={<MainLayouts />}>
+          <Route exact path="/search" element={<MainLayouts />}>
             <Route path="/search" element={<Search />} />
+          </Route>
+          <Route path="/search/:filterType" element={<MainLayouts />}>
+            <Route path="/search/:filterType" element={<Search />} />
           </Route>
         </Routes>
       </div>

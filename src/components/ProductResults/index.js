@@ -25,9 +25,9 @@ const ProductResults = ({}) => {
 
   const handleFilter = (e) => {
     const nextFilter = e.target.value;
-    navigate(`/search/${nextFilter}`);
+    navigate(`/search/${nextFilter}`);  
   };
-
+  
   if (!Array.isArray(data)) return null;
   if (data.length < 1) {
     return (
