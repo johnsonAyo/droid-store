@@ -25,6 +25,7 @@ import Recovery from "./pages/Recovery";
 import Dashboard from "./pages/Dashboard";
 import Admin from "./pages/Admin";
 import Search from "./pages/Search";
+import ProductDetails from "./pages/ProductDetails";
 import "./default.scss";
 
 const MainLayouts = () => (
@@ -90,6 +91,9 @@ function App(props) {
           </Route>
           <Route path="/search/:filterType" element={<MainLayouts />}>
             <Route path="/search/:filterType" element={<Search />} />
+          </Route>
+          <Route path="/product/:productID" element={<ProductDetails />}>
+            <Route path="/product/:productID" element={<ProductDetails />} />
           </Route>
         </Routes>
       </div>
