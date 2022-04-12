@@ -26,6 +26,7 @@ import Dashboard from "./pages/Dashboard";
 import Admin from "./pages/Admin";
 import Search from "./pages/Search";
 import ProductDetails from "./pages/ProductDetails";
+import Cart from "./pages/Cart";
 import "./default.scss";
 
 const MainLayouts = () => (
@@ -94,6 +95,9 @@ function App(props) {
           </Route>
           <Route path="/product/:productID" element={<ProductDetails />}>
             <Route path="/product/:productID" element={<ProductDetails />} />
+          </Route>
+          <Route path="/cart" element={<Cart />}>
+            <Route path="/cart" element={<Cart />} />
           </Route>
         </Routes>
       </div>
