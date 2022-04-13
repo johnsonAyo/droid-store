@@ -28,6 +28,7 @@ import Search from "./pages/Search";
 import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
 import Payment from "./pages/Payment";
+import Order from "./pages/Order";
 import "./default.scss";
 
 const MainLayouts = () => (
@@ -110,6 +111,9 @@ function App(props) {
           </Route>
           <Route path="/payment" element={<PaymentLayout />}>
             <Route path="/payment" element={<Payment />} />
+          </Route>
+          <Route path="/order/:orderID" element={<DashboardLayouts />}>
+            <Route path="/order/:orderID" element={<Order />} />
           </Route>
         </Routes>
       </div>

@@ -65,5 +65,4 @@ export default function* ordersSagas() {
     call(onSaveOrderHistoryStart),
     call(onGetUserOrderHistoryStart),
     call(onGetOrderDetailsStart),
-  ])
-}
+  ])}

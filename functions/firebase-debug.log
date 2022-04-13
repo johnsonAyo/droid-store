@@ -1,35 +1,36 @@
-[debug] [2022-04-13T04:38:05.448Z] ----------------------------------------------------------------------
-[debug] [2022-04-13T04:38:05.451Z] Command:       /Users/johnsonafuye/.nvm/versions/node/v16.14.0/bin/node /Users/johnsonafuye/.nvm/versions/node/v16.14.0/bin/firebase emulators:start --only functions
-[debug] [2022-04-13T04:38:05.452Z] CLI Version:   10.6.0
-[debug] [2022-04-13T04:38:05.452Z] Platform:      darwin
-[debug] [2022-04-13T04:38:05.452Z] Node Version:  v16.14.0
-[debug] [2022-04-13T04:38:05.459Z] Time:          Wed Apr 13 2022 05:38:05 GMT+0100 (West Africa Standard Time)
-[debug] [2022-04-13T04:38:05.459Z] ----------------------------------------------------------------------
+[debug] [2022-04-13T08:42:27.368Z] ----------------------------------------------------------------------
+[debug] [2022-04-13T08:42:27.370Z] Command:       /Users/johnsonafuye/.nvm/versions/node/v16.14.0/bin/node /Users/johnsonafuye/.nvm/versions/node/v16.14.0/bin/firebase emulators:start --only functions
+[debug] [2022-04-13T08:42:27.370Z] CLI Version:   10.6.0
+[debug] [2022-04-13T08:42:27.370Z] Platform:      darwin
+[debug] [2022-04-13T08:42:27.371Z] Node Version:  v16.14.0
+[debug] [2022-04-13T08:42:27.383Z] Time:          Wed Apr 13 2022 09:42:27 GMT+0100 (West Africa Standard Time)
+[debug] [2022-04-13T08:42:27.384Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-04-13T04:38:05.526Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-04-13T04:38:05.526Z] > authorizing via signed-in user (johnsonafuye@gmail.com)
+[debug] [2022-04-13T08:42:27.469Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-13T08:42:27.469Z] > authorizing via signed-in user (johnsonafuye@gmail.com)
 [info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
-[debug] [2022-04-13T04:38:05.561Z] [hub] writing locator at /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/hub-droid-store-eef61.json
+[warn] ⚠  emulators: It seems that you are running multiple instances of the emulator suite for project droid-store-eef61. This may result in unexpected behavior. 
+[debug] [2022-04-13T08:42:27.527Z] [hub] writing locator at /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/hub-droid-store-eef61.json
 [warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
 [info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
-[debug] [2022-04-13T04:38:05.587Z] defaultcredentials: writing to file /Users/johnsonafuye/.config/firebase/johnsonafuye_gmail_com_application_default_credentials.json
-[debug] [2022-04-13T04:38:05.590Z] Setting GAC to /Users/johnsonafuye/.config/firebase/johnsonafuye_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/johnsonafuye/.config/firebase/johnsonafuye_gmail_com_application_default_credentials.json"}}
-[debug] [2022-04-13T04:38:05.592Z] > refreshing access token with scopes: []
-[debug] [2022-04-13T04:38:05.593Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2022-04-13T08:42:28.120Z] defaultcredentials: writing to file /Users/johnsonafuye/.config/firebase/johnsonafuye_gmail_com_application_default_credentials.json
+[debug] [2022-04-13T08:42:28.123Z] Setting GAC to /Users/johnsonafuye/.config/firebase/johnsonafuye_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/johnsonafuye/.config/firebase/johnsonafuye_gmail_com_application_default_credentials.json"}}
+[debug] [2022-04-13T08:42:28.126Z] > refreshing access token with scopes: []
+[debug] [2022-04-13T08:42:28.127Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2022-04-13T04:38:06.226Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 13 Apr 2022 04:38:06 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2022-04-13T04:38:06.285Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/droid-store-eef61/adminSdkConfig [none]
-[debug] [2022-04-13T04:38:07.165Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/droid-store-eef61/adminSdkConfig 200
-[debug] [2022-04-13T04:38:07.165Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/droid-store-eef61/adminSdkConfig {"projectId":"droid-store-eef61","storageBucket":"droid-store-eef61.appspot.com","locationId":"us-central"}
-[debug] [2022-04-13T04:38:07.461Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2022-04-13T04:38:07.461Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2022-04-13T04:38:07.462Z] Starting Emulator UI with command {"binary":"node","args":["/Users/johnsonafuye/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/johnsonafuye/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[debug] [2022-04-13T08:42:35.912Z] <<< HTTP RESPONSE 200 {"date":"Wed, 13 Apr 2022 08:42:36 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-13T08:42:35.964Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/droid-store-eef61/adminSdkConfig [none]
+[debug] [2022-04-13T08:42:40.228Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/droid-store-eef61/adminSdkConfig 200
+[debug] [2022-04-13T08:42:40.228Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/droid-store-eef61/adminSdkConfig {"projectId":"droid-store-eef61","storageBucket":"droid-store-eef61.appspot.com","locationId":"us-central"}
+[debug] [2022-04-13T08:42:40.270Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-13T08:42:40.271Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-04-13T08:42:40.271Z] Starting Emulator UI with command {"binary":"node","args":["/Users/johnsonafuye/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/johnsonafuye/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
 [info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2022-04-13T04:38:07.586Z] Web / API server started at localhost:4000
+[debug] [2022-04-13T08:42:40.436Z] Web / API server started at localhost:4000
  {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
 [info] i  functions: Watching "/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions\" for Cloud Functions..."}}
-[debug] [2022-04-13T04:38:07.742Z] Validating nodejs source
-[debug] [2022-04-13T04:38:09.515Z] > [functions] package.json contents: {
+[debug] [2022-04-13T08:42:40.553Z] Validating nodejs source
+[debug] [2022-04-13T08:42:42.653Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
@@ -58,8 +59,8 @@
   },
   "private": true
 }
-[debug] [2022-04-13T04:38:09.516Z] Building nodejs source
-[debug] [2022-04-13T04:38:09.516Z] Analyzing nodejs backend spec
+[debug] [2022-04-13T08:42:42.654Z] Building nodejs source
+[debug] [2022-04-13T08:42:42.654Z] Analyzing nodejs backend spec
 [info] ✔  functions[us-central1-api]: http function initialized (http://localhost:5001/droid-store-eef61/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/droid-store-eef61/us-central1/api)."}}
 [info] 
 ┌─────────────────────────────────────────────────────────────┐
@@ -77,473 +78,269 @@
 
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
-[debug] [2022-04-13T04:39:16.101Z] Functions emulator received unknown request at path /
-[debug] [2022-04-13T04:39:17.436Z] Functions emulator received unknown request at path /favicon.ico
-[debug] [2022-04-13T04:42:43.217Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2022-04-13T04:42:43.217Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2022-04-13T04:42:43.218Z] Accepted request GET /droid-store-eef61/us-central1/api --> us-central1-api
-[debug] [2022-04-13T04:42:43.230Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
-[debug] [2022-04-13T04:42:43.231Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
-[debug] [2022-04-13T04:42:43.231Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
-[debug] [2022-04-13T04:42:43.232Z] [worker-us-central1-api-c1a647a3-ceea-44fe-97c3-2f1e266f38b8]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_47476.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-c1a647a3-ceea-44fe-97c3-2f1e266f38b8]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_47476.sock"}}
-[debug] [2022-04-13T04:42:43.232Z] [worker-us-central1-api-c1a647a3-ceea-44fe-97c3-2f1e266f38b8]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-c1a647a3-ceea-44fe-97c3-2f1e266f38b8]: BUSY"}}
-[debug] [2022-04-13T04:42:45.155Z] [runtime-status] [47476] Functions runtime initialized. {"cwd":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [47476] Functions runtime initialized. {\"cwd\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions\",\"node_version\":\"16.14.0\"}"}}
-[debug] [2022-04-13T04:42:45.157Z] [runtime-status] [47476] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [47476] Disabled runtime features: undefined"}}
-[debug] [2022-04-13T04:42:45.159Z] [runtime-status] [47476] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [47476] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js\"}"}}
-[debug] [2022-04-13T04:42:45.162Z] [runtime-status] [47476] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [47476] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}"}}
-[debug] [2022-04-13T04:42:45.162Z] [runtime-status] [47476] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [47476] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
-[debug] [2022-04-13T04:42:45.163Z] [runtime-status] [47476] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [47476] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}"}}
-[debug] [2022-04-13T04:42:45.266Z] [runtime-status] [47476] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [47476] Checked functions.config() {\"config\":{}}"}}
-[debug] [2022-04-13T04:42:45.266Z] [runtime-status] [47476] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [47476] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
-[debug] [2022-04-13T04:42:45.267Z] [runtime-status] [47476] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [47476] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}"}}
-[debug] [2022-04-13T04:42:45.268Z] [runtime-status] [47476] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [47476] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js\"}"}}
-[debug] [2022-04-13T04:42:45.268Z] [runtime-status] [47476] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [47476] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}"}}
-[debug] [2022-04-13T04:42:45.268Z] [runtime-status] [47476] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [47476] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
-[debug] [2022-04-13T04:42:45.373Z] [runtime-status] [47476] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [47476] Beginning invocation function api!"}}
+[debug] [2022-04-13T08:43:05.103Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-13T08:43:05.103Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-13T08:43:05.104Z] Accepted request OPTIONS /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
+[debug] [2022-04-13T08:43:05.115Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-04-13T08:43:05.115Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-04-13T08:43:05.116Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-13T08:43:05.116Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock"}}
+[debug] [2022-04-13T08:43:05.116Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: BUSY"}}
+[debug] [2022-04-13T08:43:06.840Z] [runtime-status] [51569] Functions runtime initialized. {"cwd":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Functions runtime initialized. {\"cwd\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-04-13T08:43:06.842Z] [runtime-status] [51569] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Disabled runtime features: undefined"}}
+[debug] [2022-04-13T08:43:06.845Z] [runtime-status] [51569] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-04-13T08:43:06.847Z] [runtime-status] [51569] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-13T08:43:06.847Z] [runtime-status] [51569] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-13T08:43:06.848Z] [runtime-status] [51569] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-13T08:43:06.947Z] [runtime-status] [51569] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-13T08:43:06.947Z] [runtime-status] [51569] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-04-13T08:43:06.948Z] [runtime-status] [51569] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-13T08:43:06.949Z] [runtime-status] [51569] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-04-13T08:43:06.949Z] [runtime-status] [51569] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-13T08:43:06.949Z] [runtime-status] [51569] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-04-13T08:43:07.103Z] [runtime-status] [51569] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Beginning invocation function api!"}}
 [info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
-[debug] [2022-04-13T04:42:45.375Z] [runtime-status] [47476] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [47476] Running api in signature http"}}
-[debug] [2022-04-13T04:42:45.378Z] [runtime-status] [47476] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_47476.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [47476] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_47476.sock"}}
-[debug] [2022-04-13T04:42:45.389Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2022-04-13T04:42:45.389Z] [functions] Got req.url=/droid-store-eef61/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api, mapping to path=/"}}
-[debug] [2022-04-13T04:42:45.395Z] [runtime-status] [47476] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [47476] Ephemeral server handling GET request"}}
-[debug] [2022-04-13T04:42:45.413Z] [runtime-status] [47476] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [47476] Ephemeral server survived."}}
+[debug] [2022-04-13T08:43:07.104Z] [runtime-status] [51569] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Running api in signature http"}}
+[debug] [2022-04-13T08:43:07.106Z] [runtime-status] [51569] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock"}}
+[debug] [2022-04-13T08:43:07.111Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-13T08:43:07.112Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2022-04-13T08:43:07.118Z] [runtime-status] [51569] Ephemeral server handling OPTIONS request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Ephemeral server handling OPTIONS request"}}
+[debug] [2022-04-13T08:43:07.126Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-04-13T08:43:07.126Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-04-13T08:43:07.126Z] Accepted request POST /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
+[debug] [2022-04-13T08:43:07.132Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-04-13T08:43:07.132Z] [worker-pool] Adding worker with key us-central1-api, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=2"}}
+[debug] [2022-04-13T08:43:07.132Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-13T08:43:07.133Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock"}}
+[debug] [2022-04-13T08:43:07.133Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: BUSY"}}
+[debug] [2022-04-13T08:43:07.133Z] [runtime-status] [51569] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Ephemeral server survived."}}
 [info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
-[debug] [2022-04-13T04:42:45.417Z] [worker-us-central1-api-c1a647a3-ceea-44fe-97c3-2f1e266f38b8]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-c1a647a3-ceea-44fe-97c3-2f1e266f38b8]: IDLE"}}
-[debug] [2022-04-13T04:42:45.417Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2022-04-13T04:48:13.283Z] File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers"}}
-[debug] [2022-04-13T04:48:14.289Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
-[debug] [2022-04-13T04:48:14.291Z] [worker-us-central1-api-c1a647a3-ceea-44fe-97c3-2f1e266f38b8]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-c1a647a3-ceea-44fe-97c3-2f1e266f38b8]: FINISHING"}}
-[debug] [2022-04-13T04:48:14.297Z] Validating nodejs source
-[debug] [2022-04-13T04:48:16.233Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "16"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.3",
-    "firebase-admin": "^10.0.2",
-    "firebase-functions": "^3.18.0",
-    "stripe": "^8.216.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.9.0",
-    "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^0.2.0"
-  },
-  "private": true
-}
-[debug] [2022-04-13T04:48:16.233Z] Building nodejs source
-[debug] [2022-04-13T04:48:16.234Z] Analyzing nodejs backend spec
-[debug] [2022-04-13T04:48:16.241Z] [worker-us-central1-api-c1a647a3-ceea-44fe-97c3-2f1e266f38b8]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-c1a647a3-ceea-44fe-97c3-2f1e266f38b8]: exited"}}
-[debug] [2022-04-13T04:48:16.241Z] [worker-us-central1-api-c1a647a3-ceea-44fe-97c3-2f1e266f38b8]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-c1a647a3-ceea-44fe-97c3-2f1e266f38b8]: FINISHED"}}
-[debug] [2022-04-13T04:48:18.917Z] File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers"}}
-[debug] [2022-04-13T04:48:19.921Z] Validating nodejs source
-[debug] [2022-04-13T04:48:22.124Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "16"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.3",
-    "firebase-admin": "^10.0.2",
-    "firebase-functions": "^3.18.0",
-    "stripe": "^8.216.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.9.0",
-    "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^0.2.0"
-  },
-  "private": true
-}
-[debug] [2022-04-13T04:48:22.125Z] Building nodejs source
-[debug] [2022-04-13T04:48:22.125Z] Analyzing nodejs backend spec
-[debug] [2022-04-13T04:48:23.712Z] File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers"}}
-[debug] [2022-04-13T04:48:23.812Z] File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers"}}
-[debug] [2022-04-13T04:48:24.813Z] Validating nodejs source
-[debug] [2022-04-13T04:48:26.288Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "16"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.3",
-    "firebase-admin": "^10.0.2",
-    "firebase-functions": "^3.18.0",
-    "stripe": "^8.216.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.9.0",
-    "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^0.2.0"
-  },
-  "private": true
-}
-[debug] [2022-04-13T04:48:26.288Z] Building nodejs source
-[debug] [2022-04-13T04:48:26.288Z] Analyzing nodejs backend spec
-[debug] [2022-04-13T04:49:01.621Z] File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers"}}
-[debug] [2022-04-13T04:49:02.626Z] Validating nodejs source
-[debug] [2022-04-13T04:49:04.310Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "16"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.3",
-    "firebase-admin": "^10.0.2",
-    "firebase-functions": "^3.18.0",
-    "stripe": "^8.216.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.9.0",
-    "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^0.2.0"
-  },
-  "private": true
-}
-[debug] [2022-04-13T04:49:04.311Z] Building nodejs source
-[debug] [2022-04-13T04:49:04.311Z] Analyzing nodejs backend spec
-[debug] [2022-04-13T04:49:35.449Z] File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers"}}
-[debug] [2022-04-13T04:49:36.462Z] Validating nodejs source
-[debug] [2022-04-13T04:49:38.193Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "16"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.3",
-    "firebase-admin": "^10.0.2",
-    "firebase-functions": "^3.18.0",
-    "stripe": "^8.216.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.9.0",
-    "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^0.2.0"
-  },
-  "private": true
-}
-[debug] [2022-04-13T04:49:38.194Z] Building nodejs source
-[debug] [2022-04-13T04:49:38.194Z] Analyzing nodejs backend spec
-[debug] [2022-04-13T04:49:38.198Z] File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers"}}
-[debug] [2022-04-13T04:49:39.202Z] Validating nodejs source
-[debug] [2022-04-13T04:49:40.603Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "16"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.3",
-    "firebase-admin": "^10.0.2",
-    "firebase-functions": "^3.18.0",
-    "stripe": "^8.216.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.9.0",
-    "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^0.2.0"
-  },
-  "private": true
-}
-[debug] [2022-04-13T04:49:40.603Z] Building nodejs source
-[debug] [2022-04-13T04:49:40.604Z] Analyzing nodejs backend spec
-[debug] [2022-04-13T04:49:46.150Z] File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers"}}
-[debug] [2022-04-13T04:49:46.249Z] File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers"}}
-[debug] [2022-04-13T04:49:47.252Z] Validating nodejs source
-[debug] [2022-04-13T04:49:48.695Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "16"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.3",
-    "firebase-admin": "^10.0.2",
-    "firebase-functions": "^3.18.0",
-    "stripe": "^8.216.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.9.0",
-    "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^0.2.0"
-  },
-  "private": true
-}
-[debug] [2022-04-13T04:49:48.696Z] Building nodejs source
-[debug] [2022-04-13T04:49:48.696Z] Analyzing nodejs backend spec
-[debug] [2022-04-13T04:50:07.742Z] File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers"}}
-[debug] [2022-04-13T04:50:08.745Z] Validating nodejs source
-[debug] [2022-04-13T04:50:10.318Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "16"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.3",
-    "firebase-admin": "^10.0.2",
-    "firebase-functions": "^3.18.0",
-    "stripe": "^8.216.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.9.0",
-    "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^0.2.0"
-  },
-  "private": true
-}
-[debug] [2022-04-13T04:50:10.318Z] Building nodejs source
-[debug] [2022-04-13T04:50:10.319Z] Analyzing nodejs backend spec
-[debug] [2022-04-13T04:53:23.088Z] File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers"}}
-[debug] [2022-04-13T04:53:24.094Z] Validating nodejs source
-[debug] [2022-04-13T04:53:25.944Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "16"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.3",
-    "firebase-admin": "^10.0.2",
-    "firebase-functions": "^3.18.0",
-    "stripe": "^8.216.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.9.0",
-    "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^0.2.0"
-  },
-  "private": true
-}
-[debug] [2022-04-13T04:53:25.945Z] Building nodejs source
-[debug] [2022-04-13T04:53:25.945Z] Analyzing nodejs backend spec
-[debug] [2022-04-13T04:53:25.952Z] File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers"}}
-[debug] [2022-04-13T04:53:26.046Z] File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/index.js changed, reloading triggers"}}
-[debug] [2022-04-13T04:53:27.049Z] Validating nodejs source
-[debug] [2022-04-13T04:53:28.618Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "16"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.3",
-    "firebase-admin": "^10.0.2",
-    "firebase-functions": "^3.18.0",
-    "stripe": "^8.216.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.9.0",
-    "eslint-config-google": "^0.14.0",
-    "firebase-functions-test": "^0.2.0"
-  },
-  "private": true
-}
-[debug] [2022-04-13T04:53:28.618Z] Building nodejs source
-[debug] [2022-04-13T04:53:28.618Z] Analyzing nodejs backend spec
-[debug] [2022-04-13T04:59:13.320Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2022-04-13T04:59:13.325Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2022-04-13T04:59:13.326Z] Accepted request OPTIONS /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
-[debug] [2022-04-13T04:59:13.328Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
-[debug] [2022-04-13T04:59:13.347Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
-[debug] [2022-04-13T04:59:13.350Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
-[debug] [2022-04-13T04:59:13.350Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
-[debug] [2022-04-13T04:59:13.351Z] [worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock"}}
-[debug] [2022-04-13T04:59:13.352Z] [worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: BUSY"}}
-[debug] [2022-04-13T04:59:14.890Z] [runtime-status] [48152] Functions runtime initialized. {"cwd":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Functions runtime initialized. {\"cwd\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions\",\"node_version\":\"16.14.0\"}"}}
-[debug] [2022-04-13T04:59:14.892Z] [runtime-status] [48152] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Disabled runtime features: undefined"}}
-[debug] [2022-04-13T04:59:14.898Z] [runtime-status] [48152] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js\"}"}}
-[debug] [2022-04-13T04:59:14.901Z] [runtime-status] [48152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}"}}
-[debug] [2022-04-13T04:59:14.902Z] [runtime-status] [48152] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
-[debug] [2022-04-13T04:59:14.903Z] [runtime-status] [48152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}"}}
-[debug] [2022-04-13T04:59:15.019Z] [runtime-status] [48152] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Checked functions.config() {\"config\":{}}"}}
-[debug] [2022-04-13T04:59:15.020Z] [runtime-status] [48152] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
-[debug] [2022-04-13T04:59:15.020Z] [runtime-status] [48152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}"}}
-[debug] [2022-04-13T04:59:15.021Z] [runtime-status] [48152] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js\"}"}}
-[debug] [2022-04-13T04:59:15.022Z] [runtime-status] [48152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}"}}
-[debug] [2022-04-13T04:59:15.022Z] [runtime-status] [48152] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
-[debug] [2022-04-13T04:59:15.169Z] [runtime-status] [48152] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Beginning invocation function api!"}}
+[debug] [2022-04-13T08:43:07.134Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: IDLE"}}
+[debug] [2022-04-13T08:43:07.134Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-13T08:43:07.972Z] [runtime-status] [51570] Functions runtime initialized. {"cwd":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Functions runtime initialized. {\"cwd\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-04-13T08:43:07.973Z] [runtime-status] [51570] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Disabled runtime features: undefined"}}
+[debug] [2022-04-13T08:43:07.976Z] [runtime-status] [51570] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-04-13T08:43:07.977Z] [runtime-status] [51570] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-13T08:43:07.978Z] [runtime-status] [51570] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-13T08:43:07.979Z] [runtime-status] [51570] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-13T08:43:08.042Z] [runtime-status] [51570] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-13T08:43:08.042Z] [runtime-status] [51570] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-04-13T08:43:08.043Z] [runtime-status] [51570] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-13T08:43:08.044Z] [runtime-status] [51570] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-04-13T08:43:08.045Z] [runtime-status] [51570] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-13T08:43:08.045Z] [runtime-status] [51570] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/johnsonafuye/Desktop/Project/React Projects/e-commerce/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-04-13T08:43:08.136Z] [runtime-status] [51570] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Beginning invocation function api!"}}
 [info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
-[debug] [2022-04-13T04:59:15.182Z] [runtime-status] [48152] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Running api in signature http"}}
-[debug] [2022-04-13T04:59:15.183Z] [runtime-status] [48152] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock"}}
-[debug] [2022-04-13T04:59:15.197Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2022-04-13T04:59:15.199Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
-[debug] [2022-04-13T04:59:15.222Z] [runtime-status] [48152] Ephemeral server handling OPTIONS request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Ephemeral server handling OPTIONS request"}}
-[debug] [2022-04-13T04:59:15.228Z] [runtime-status] [48152] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Ephemeral server survived."}}
-[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
-[debug] [2022-04-13T04:59:15.231Z] [worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: IDLE"}}
-[debug] [2022-04-13T04:59:15.231Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2022-04-13T04:59:15.234Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2022-04-13T04:59:15.235Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2022-04-13T04:59:15.235Z] Accepted request POST /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
-[debug] [2022-04-13T04:59:15.235Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
-[debug] [2022-04-13T04:59:15.235Z] [worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock"}}
-[debug] [2022-04-13T04:59:15.235Z] [worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: BUSY"}}
-[debug] [2022-04-13T04:59:15.241Z] [runtime-status] [48152] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Beginning invocation function api!"}}
+[debug] [2022-04-13T08:43:08.137Z] [runtime-status] [51570] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Running api in signature http"}}
+[debug] [2022-04-13T08:43:08.140Z] [runtime-status] [51570] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock"}}
+[debug] [2022-04-13T08:43:08.144Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-13T08:43:08.144Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2022-04-13T08:43:08.160Z] [runtime-status] [51570] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Ephemeral server handling POST request"}}
+[debug] [2022-04-13T08:43:08.170Z] [runtime-status] [51570] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~2s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~2s"}}
+[debug] [2022-04-13T08:43:10.858Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: IDLE"}}
+[debug] [2022-04-13T08:43:10.858Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-13T08:43:51.258Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-13T08:43:51.263Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-13T08:43:51.264Z] Accepted request OPTIONS /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
+[debug] [2022-04-13T08:43:51.265Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-13T08:43:51.266Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock"}}
+[debug] [2022-04-13T08:43:51.266Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: BUSY"}}
+[debug] [2022-04-13T08:43:51.267Z] [runtime-status] [51569] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Beginning invocation function api!"}}
 [info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
-[debug] [2022-04-13T04:59:15.242Z] [runtime-status] [48152] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Running api in signature http"}}
-[debug] [2022-04-13T04:59:15.242Z] [runtime-status] [48152] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock"}}
-[debug] [2022-04-13T04:59:15.244Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2022-04-13T04:59:15.244Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
-[debug] [2022-04-13T04:59:15.260Z] [runtime-status] [48152] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Ephemeral server handling POST request"}}
-[debug] [2022-04-13T04:59:15.268Z] [runtime-status] [48152] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Ephemeral server survived."}}
+[debug] [2022-04-13T08:43:51.283Z] [runtime-status] [51569] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Running api in signature http"}}
+[debug] [2022-04-13T08:43:51.285Z] [runtime-status] [51569] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock"}}
+[debug] [2022-04-13T08:43:51.300Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-13T08:43:51.302Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2022-04-13T08:43:51.306Z] [runtime-status] [51569] Ephemeral server handling OPTIONS request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Ephemeral server handling OPTIONS request"}}
+[debug] [2022-04-13T08:43:51.308Z] [runtime-status] [51569] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Ephemeral server survived."}}
 [info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
-[debug] [2022-04-13T04:59:16.369Z] [worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: IDLE"}}
-[debug] [2022-04-13T04:59:16.369Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2022-04-13T04:59:19.575Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2022-04-13T04:59:19.575Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2022-04-13T04:59:19.575Z] Accepted request POST /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
-[debug] [2022-04-13T04:59:19.575Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
-[debug] [2022-04-13T04:59:19.576Z] [worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock"}}
-[debug] [2022-04-13T04:59:19.576Z] [worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: BUSY"}}
-[debug] [2022-04-13T04:59:19.576Z] [runtime-status] [48152] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Beginning invocation function api!"}}
+[debug] [2022-04-13T08:43:51.309Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: IDLE"}}
+[debug] [2022-04-13T08:43:51.310Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-13T08:43:51.311Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-13T08:43:51.311Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-13T08:43:51.312Z] Accepted request POST /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
+[debug] [2022-04-13T08:43:51.312Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-13T08:43:51.312Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock"}}
+[debug] [2022-04-13T08:43:51.312Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: BUSY"}}
+[debug] [2022-04-13T08:43:51.318Z] [runtime-status] [51569] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Beginning invocation function api!"}}
 [info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
-[debug] [2022-04-13T04:59:19.577Z] [runtime-status] [48152] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Running api in signature http"}}
-[debug] [2022-04-13T04:59:19.577Z] [runtime-status] [48152] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock"}}
-[debug] [2022-04-13T04:59:19.579Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2022-04-13T04:59:19.579Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
-[debug] [2022-04-13T04:59:19.582Z] [runtime-status] [48152] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Ephemeral server handling POST request"}}
-[debug] [2022-04-13T04:59:19.584Z] [runtime-status] [48152] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Ephemeral server survived."}}
-[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
-[debug] [2022-04-13T04:59:20.069Z] [worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: IDLE"}}
-[debug] [2022-04-13T04:59:20.070Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2022-04-13T04:59:20.837Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2022-04-13T04:59:20.837Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2022-04-13T04:59:20.837Z] Accepted request OPTIONS /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
-[debug] [2022-04-13T04:59:20.838Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
-[debug] [2022-04-13T04:59:20.838Z] [worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock"}}
-[debug] [2022-04-13T04:59:20.838Z] [worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: BUSY"}}
-[debug] [2022-04-13T04:59:20.839Z] [runtime-status] [48152] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Beginning invocation function api!"}}
+[debug] [2022-04-13T08:43:51.319Z] [runtime-status] [51569] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Running api in signature http"}}
+[debug] [2022-04-13T08:43:51.319Z] [runtime-status] [51569] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock"}}
+[debug] [2022-04-13T08:43:51.321Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-13T08:43:51.321Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2022-04-13T08:43:51.342Z] [runtime-status] [51569] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Ephemeral server handling POST request"}}
+[debug] [2022-04-13T08:43:51.353Z] [runtime-status] [51569] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~3s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~3s"}}
+[debug] [2022-04-13T08:43:54.376Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: IDLE"}}
+[debug] [2022-04-13T08:43:54.376Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-13T08:45:48.201Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-13T08:45:48.207Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-13T08:45:48.207Z] Accepted request OPTIONS /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
+[debug] [2022-04-13T08:45:48.214Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-13T08:45:48.217Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock"}}
+[debug] [2022-04-13T08:45:48.217Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: BUSY"}}
+[debug] [2022-04-13T08:45:48.223Z] [runtime-status] [51569] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Beginning invocation function api!"}}
 [info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
-[debug] [2022-04-13T04:59:20.840Z] [runtime-status] [48152] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Running api in signature http"}}
-[debug] [2022-04-13T04:59:20.840Z] [runtime-status] [48152] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock"}}
-[debug] [2022-04-13T04:59:20.847Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2022-04-13T04:59:20.847Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
-[debug] [2022-04-13T04:59:20.848Z] [runtime-status] [48152] Ephemeral server handling OPTIONS request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Ephemeral server handling OPTIONS request"}}
-[debug] [2022-04-13T04:59:20.850Z] [runtime-status] [48152] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Ephemeral server survived."}}
+[debug] [2022-04-13T08:45:48.232Z] [runtime-status] [51569] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Running api in signature http"}}
+[debug] [2022-04-13T08:45:48.233Z] [runtime-status] [51569] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock"}}
+[debug] [2022-04-13T08:45:48.264Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-13T08:45:48.265Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2022-04-13T08:45:48.282Z] [runtime-status] [51569] Ephemeral server handling OPTIONS request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Ephemeral server handling OPTIONS request"}}
+[debug] [2022-04-13T08:45:48.288Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-04-13T08:45:48.292Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-04-13T08:45:48.292Z] Accepted request POST /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
+[debug] [2022-04-13T08:45:48.293Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-13T08:45:48.293Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock"}}
+[debug] [2022-04-13T08:45:48.294Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: BUSY"}}
+[debug] [2022-04-13T08:45:48.294Z] [runtime-status] [51569] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Ephemeral server survived."}}
 [info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
-[debug] [2022-04-13T04:59:20.851Z] [worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: IDLE"}}
-[debug] [2022-04-13T04:59:20.851Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2022-04-13T04:59:20.852Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2022-04-13T04:59:20.852Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2022-04-13T04:59:20.852Z] Accepted request POST /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
-[debug] [2022-04-13T04:59:20.856Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
-[debug] [2022-04-13T04:59:20.856Z] [worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock"}}
-[debug] [2022-04-13T04:59:20.856Z] [worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: BUSY"}}
-[debug] [2022-04-13T04:59:20.859Z] [runtime-status] [48152] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Beginning invocation function api!"}}
+[debug] [2022-04-13T08:45:48.295Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: IDLE"}}
+[debug] [2022-04-13T08:45:48.295Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-13T08:45:48.299Z] [runtime-status] [51570] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Beginning invocation function api!"}}
 [info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
-[debug] [2022-04-13T04:59:20.860Z] [runtime-status] [48152] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Running api in signature http"}}
-[debug] [2022-04-13T04:59:20.860Z] [runtime-status] [48152] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_48152.sock"}}
-[debug] [2022-04-13T04:59:20.862Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2022-04-13T04:59:20.862Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
-[debug] [2022-04-13T04:59:20.864Z] [runtime-status] [48152] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Ephemeral server handling POST request"}}
-[debug] [2022-04-13T04:59:20.865Z] [runtime-status] [48152] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [48152] Ephemeral server survived."}}
+[debug] [2022-04-13T08:45:48.301Z] [runtime-status] [51570] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Running api in signature http"}}
+[debug] [2022-04-13T08:45:48.316Z] [runtime-status] [51570] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock"}}
+[debug] [2022-04-13T08:45:48.318Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-13T08:45:48.319Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2022-04-13T08:45:48.325Z] [runtime-status] [51570] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Ephemeral server handling POST request"}}
+[debug] [2022-04-13T08:45:48.334Z] [runtime-status] [51570] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~4s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~4s"}}
+[debug] [2022-04-13T08:45:52.668Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: IDLE"}}
+[debug] [2022-04-13T08:45:52.668Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-13T09:07:48.024Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-13T09:07:48.034Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-13T09:07:48.034Z] Accepted request OPTIONS /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
+[debug] [2022-04-13T09:07:48.036Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-13T09:07:48.038Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock"}}
+[debug] [2022-04-13T09:07:48.038Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: BUSY"}}
+[debug] [2022-04-13T09:07:48.067Z] [runtime-status] [51569] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-04-13T09:07:48.073Z] [runtime-status] [51569] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Running api in signature http"}}
+[debug] [2022-04-13T09:07:48.084Z] [runtime-status] [51569] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock"}}
+[debug] [2022-04-13T09:07:48.113Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-13T09:07:48.114Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2022-04-13T09:07:48.125Z] [runtime-status] [51569] Ephemeral server handling OPTIONS request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Ephemeral server handling OPTIONS request"}}
+[debug] [2022-04-13T09:07:48.133Z] [runtime-status] [51569] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Ephemeral server survived."}}
+[debug] [2022-04-13T09:07:48.136Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-04-13T09:07:48.136Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-04-13T09:07:48.137Z] Accepted request POST /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
+[debug] [2022-04-13T09:07:48.137Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-13T09:07:48.137Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock"}}
+[debug] [2022-04-13T09:07:48.137Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: BUSY"}}
 [info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
-[debug] [2022-04-13T04:59:21.323Z] [worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e4f989ef-9b46-4c9f-9c65-cc990f0fee07]: IDLE"}}
-[debug] [2022-04-13T04:59:21.323Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-13T09:07:48.140Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: IDLE"}}
+[debug] [2022-04-13T09:07:48.141Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-13T09:07:48.150Z] [runtime-status] [51570] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-04-13T09:07:48.152Z] [runtime-status] [51570] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Running api in signature http"}}
+[debug] [2022-04-13T09:07:48.188Z] [runtime-status] [51570] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock"}}
+[debug] [2022-04-13T09:07:48.191Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-13T09:07:48.191Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2022-04-13T09:07:48.201Z] [runtime-status] [51570] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Ephemeral server handling POST request"}}
+[debug] [2022-04-13T09:07:48.215Z] [runtime-status] [51570] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-04-13T09:07:49.172Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: IDLE"}}
+[debug] [2022-04-13T09:07:49.173Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-13T09:54:46.790Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-13T09:54:46.798Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-13T09:54:46.799Z] Accepted request OPTIONS /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
+[debug] [2022-04-13T09:54:46.800Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-13T09:54:46.802Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock"}}
+[debug] [2022-04-13T09:54:46.808Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: BUSY"}}
+[debug] [2022-04-13T09:54:46.824Z] [runtime-status] [51569] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-04-13T09:54:46.833Z] [runtime-status] [51569] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Running api in signature http"}}
+[debug] [2022-04-13T09:54:46.843Z] [runtime-status] [51569] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock"}}
+[debug] [2022-04-13T09:54:46.921Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-13T09:54:46.924Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2022-04-13T09:54:46.943Z] [runtime-status] [51569] Ephemeral server handling OPTIONS request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Ephemeral server handling OPTIONS request"}}
+[debug] [2022-04-13T09:54:46.954Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-04-13T09:54:46.955Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-04-13T09:54:46.955Z] Accepted request POST /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
+[debug] [2022-04-13T09:54:46.956Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-13T09:54:46.956Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock"}}
+[debug] [2022-04-13T09:54:46.956Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: BUSY"}}
+[debug] [2022-04-13T09:54:46.958Z] [runtime-status] [51569] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-04-13T09:54:46.960Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: IDLE"}}
+[debug] [2022-04-13T09:54:46.960Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-13T09:54:46.982Z] [runtime-status] [51570] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-04-13T09:54:47.010Z] [runtime-status] [51570] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Running api in signature http"}}
+[debug] [2022-04-13T09:54:47.023Z] [runtime-status] [51570] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock"}}
+[debug] [2022-04-13T09:54:47.029Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-13T09:54:47.030Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2022-04-13T09:54:47.043Z] [runtime-status] [51570] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Ephemeral server handling POST request"}}
+[debug] [2022-04-13T09:54:47.058Z] [runtime-status] [51570] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-04-13T09:54:47.983Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: IDLE"}}
+[debug] [2022-04-13T09:54:48.010Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-13T13:26:44.294Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-13T13:26:44.312Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-13T13:26:44.314Z] Accepted request OPTIONS /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
+[debug] [2022-04-13T13:26:44.321Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-13T13:26:44.326Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock"}}
+[debug] [2022-04-13T13:26:44.329Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: BUSY"}}
+[debug] [2022-04-13T13:26:44.372Z] [runtime-status] [51569] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-04-13T13:26:44.398Z] [runtime-status] [51569] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Running api in signature http"}}
+[debug] [2022-04-13T13:26:44.416Z] [runtime-status] [51569] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock"}}
+[debug] [2022-04-13T13:26:44.473Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-13T13:26:44.478Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2022-04-13T13:26:44.499Z] [runtime-status] [51569] Ephemeral server handling OPTIONS request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Ephemeral server handling OPTIONS request"}}
+[debug] [2022-04-13T13:26:44.510Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-04-13T13:26:44.511Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-04-13T13:26:44.511Z] Accepted request POST /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
+[debug] [2022-04-13T13:26:44.511Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-13T13:26:44.512Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock"}}
+[debug] [2022-04-13T13:26:44.512Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: BUSY"}}
+[debug] [2022-04-13T13:26:44.513Z] [runtime-status] [51569] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-04-13T13:26:44.515Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: IDLE"}}
+[debug] [2022-04-13T13:26:44.517Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-13T13:26:44.560Z] [runtime-status] [51570] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-04-13T13:26:44.562Z] [runtime-status] [51570] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Running api in signature http"}}
+[debug] [2022-04-13T13:26:44.614Z] [runtime-status] [51570] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock"}}
+[debug] [2022-04-13T13:26:44.690Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-13T13:26:44.691Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2022-04-13T13:26:44.739Z] [runtime-status] [51570] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Ephemeral server handling POST request"}}
+[debug] [2022-04-13T13:26:44.764Z] [runtime-status] [51570] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-04-13T13:26:45.810Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: IDLE"}}
+[debug] [2022-04-13T13:26:45.810Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-13T13:27:02.703Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-13T13:27:02.703Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-13T13:27:02.703Z] Accepted request OPTIONS /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
+[debug] [2022-04-13T13:27:02.704Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-13T13:27:02.705Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock"}}
+[debug] [2022-04-13T13:27:02.705Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: BUSY"}}
+[debug] [2022-04-13T13:27:02.706Z] [runtime-status] [51569] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-04-13T13:27:02.707Z] [runtime-status] [51569] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Running api in signature http"}}
+[debug] [2022-04-13T13:27:02.795Z] [runtime-status] [51569] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51569.sock"}}
+[debug] [2022-04-13T13:27:02.798Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-13T13:27:02.798Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2022-04-13T13:27:02.800Z] [runtime-status] [51569] Ephemeral server handling OPTIONS request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Ephemeral server handling OPTIONS request"}}
+[debug] [2022-04-13T13:27:02.802Z] [runtime-status] [51569] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51569] Ephemeral server survived."}}
+[debug] [2022-04-13T13:27:02.804Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-04-13T13:27:02.804Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-04-13T13:27:02.804Z] Accepted request POST /droid-store-eef61/us-central1/api/payments/create --> us-central1-api
+[debug] [2022-04-13T13:27:02.805Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-13T13:27:02.805Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: Assigning socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock"}}
+[debug] [2022-04-13T13:27:02.805Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: BUSY"}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-04-13T13:27:02.806Z] [worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-e5568d04-0123-4f35-b517-507d3dc704f3]: IDLE"}}
+[debug] [2022-04-13T13:27:02.806Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-13T13:27:02.806Z] [runtime-status] [51570] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-04-13T13:27:02.807Z] [runtime-status] [51570] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Running api in signature http"}}
+[debug] [2022-04-13T13:27:02.807Z] [runtime-status] [51570] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Attempting to listen to socketPath: /var/folders/3p/q77q1d8x7p7443gxctg5xj180000gn/T/fire_emu_51570.sock"}}
+[debug] [2022-04-13T13:27:02.811Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-13T13:27:02.812Z] [functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/droid-store-eef61/us-central1/api/payments/create, mapping to path=/payments/create"}}
+[debug] [2022-04-13T13:27:02.814Z] [runtime-status] [51570] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Ephemeral server handling POST request"}}
+[debug] [2022-04-13T13:27:02.819Z] [runtime-status] [51570] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [51570] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-04-13T13:27:03.713Z] [worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28157f65-279c-4276-9f70-d5874daf595e]: IDLE"}}
+[debug] [2022-04-13T13:27:03.714Z] [work-queue] {"queueLength":0,"workRunningCount":0}
