@@ -27,12 +27,21 @@ import Admin from "./pages/Admin";
 import Search from "./pages/Search";
 import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
+import Payment from "./pages/Payment";
 import "./default.scss";
 
 const MainLayouts = () => (
   <MainLayout>
     <Outlet />
   </MainLayout>
+);
+
+const PaymentLayout = () => (
+  <WithAuth>
+    <MainLayout>
+      <Outlet />
+    </MainLayout>
+  </WithAuth>
 );
 
 const DashboardLayouts = () => (
@@ -93,11 +102,14 @@ function App(props) {
           <Route path="/search/:filterType" element={<MainLayouts />}>
             <Route path="/search/:filterType" element={<Search />} />
           </Route>
-          <Route path="/product/:productID" element={<ProductDetails />}>
+          <Route path="/product/:productID" element={<MainLayouts />}>
             <Route path="/product/:productID" element={<ProductDetails />} />
           </Route>
-          <Route path="/cart" element={<Cart />}>
+          <Route path="/cart" element={<MainLayouts />}>
             <Route path="/cart" element={<Cart />} />
+          </Route>
+          <Route path="/payment" element={<PaymentLayout />}>
+            <Route path="/payment" element={<Payment />} />
           </Route>
         </Routes>
       </div>
