@@ -1,0 +1,16 @@
+{
+  "post": {
+    "monday": {
+      "userId": 1,
+      "id": 1,
+      "title": "monday",
+      "body": "lorem ipsium"
+    },
+    "tuesday": {
+      "userId": 2,
+      "id": 2,
+      "title": "tuesday",
+      "body": "lorem ipsium"
+    }
+  }
+}

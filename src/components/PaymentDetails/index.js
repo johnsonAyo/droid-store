@@ -124,7 +124,7 @@ const PaymentDetails = () => {
                       documentID,
                       productThumbnail,
                       productName,
-                      productPrice, 
+                      productPrice,
                       quantity,
                     } = item;
 

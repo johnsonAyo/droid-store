@@ -5,7 +5,7 @@ import { signOutUserStart } from "./../../redux/User/user.actions";
 import { selectCartItemsCount } from "./../../redux/Cart/cart.selectors";
 import "./styles.scss";
 
-import Logo from "./../../assets/logo.png";
+const  Logo =  "https://res.cloudinary.com/dfi24gqb6/image/upload/v1649908411/imagws/WhatsApp_Image_2022-04-14_at_4.49.56_AM_tu2cv3.jpg";
 
 const mapState = (state) => ({
   currentUser: state.user.currentUser,
@@ -38,7 +38,7 @@ const Header = (props) => {
         <nav className={`mainMenu ${activeMenu ? "active" : ""}`}>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">Jays Gadget Hub</Link>
             </li>
             <li>
               <Link to="/search">Search</Link>

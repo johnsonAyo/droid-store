@@ -25,9 +25,9 @@ const ProductResults = ({}) => {
 
   const handleFilter = (e) => {
     const nextFilter = e.target.value;
-    navigate(`/search/${nextFilter}`);  
+    navigate(`/search/${nextFilter}`);
   };
-  
+
   if (!Array.isArray(data)) return null;
   if (data.length < 1) {
     return (
@@ -45,12 +45,12 @@ const ProductResults = ({}) => {
         value: "",
       },
       {
-        name: "Mens",
-        value: "mens",
+        name: "Phone",
+        value: "phone",
       },
       {
-        name: "Womens",
-        value: "womens",
+        name: "Laptop",
+        value: "laptop",
       },
     ],
     handleChange: handleFilter,
