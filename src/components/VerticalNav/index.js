@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-// import UserProfile from './../UserProfile';
+import UserProfile from "./../UserProfile";
 import "./styles.scss";
 
 const mapState = ({ user }) => ({
@@ -16,7 +16,7 @@ const VerticalNav = ({ children }) => {
 
   return (
     <div className="verticalNav">
-      {/* <UserProfile {...configUserProfile} /> */}
+      <UserProfile {...configUserProfile} />
 
       <div className="menu">{children}</div>
     </div>
